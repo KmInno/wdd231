@@ -4,11 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Muwanda Innocent - 2024 - Home page">
+    <meta name="author" content="Muwanda Innocent">
+    <title>WDD 231 - Web Frontend Development I - Muwanda Innocent</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
 </head>
 
 <body>
-    this is my home page
+    <header>
+        <div>
+            <img src="images/profile.jpg" alt="profile image" class="profile">
+            <h1 class="name">Muwanda Innocent</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/muwanda-innocent-8a45401a7">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/muwanda-innocent-8a45401a7">Chamber</a></li>
+                <li><a href="https://byui.instructure.com">GitHub Profile</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/1?lang=eng&id=17,19#p17">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-1">
+            <h3> Course Work</h3>
+        </section>
+
+        <section class="card-2">
+            <h3>Kampala, Uganda</h3>
+        </section>
+
+        <section class="card-3">
+            <h3>Web and Computer Programming Certificate</h3>
+
+            <div>
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div>
+                <button>CSE 110</button>
+                <button>WDD 130</button>
+                <button>CSE 111</button>
+                <button>CSE 210</button>
+                <button>WDD 131</button>
+                <button>WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+        <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+    </footer>
+
 </body>
 
 </html>
