@@ -1,25 +1,4 @@
-/* General Styles for Desktop View */
-/* header .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-right: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Hamburger Icon Styles */
 .hamburger-menu {
