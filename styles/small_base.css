@@ -1,0 +1,125 @@
+/* General Styles for Desktop View */
+/* header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+} */
+
+/* Hamburger Icon Styles */
+.hamburger-menu {
+  display: none; /* Hidden by default for desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust header and profile image for mobile view */
+  header div {
+    /* background-color:  rgb(34, 69, 83); */
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 4rem;
+  padding-right: 5rem;
+  text-align: center; */
+  padding-left: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* img.profile {
+      width: 100px;
+      height: 100px;
+    } */
+  /*   
+    h1.name {
+      font-size: 40px;
+    }
+   */
+  /* Hide the desktop menu and show the hamburger icon */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    /* position: absolute; */
+    /* top: 70px; */
+    right: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu on mobile */
+  }
+
+  /* Toggle menu when hamburger is clicked */
+  nav ul.show {
+    display: flex;
+  }
+
+  /* Make the cards stack vertically on mobile view */
+  main div.two-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section.card-1,
+  main section.card-2 {
+    width: 90%; /* Full width for mobile */
+  }
+
+  /* Adjust buttons for mobile view */
+  main section.card-3 div.three-buttons button,
+  main section.card-3 div.six-buttons button {
+    width: 80%; /* Full width for mobile buttons */
+  }
+
+  main section.card-3 div.six-buttons button {
+    width: 45%; /* Two buttons per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  h1.name {
+    font-size: 30px;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  main section.card-3 div.six-buttons button {
+    width: 100%; /* One button per row for very small screens */
+  }
+}

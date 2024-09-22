@@ -8,53 +8,77 @@
     <meta name="author" content="Muwanda Innocent">
     <title>WDD 231 - Web Frontend Development I - Muwanda Innocent</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small_base.css">
+
     <script src="scripts/base.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="header-content">
             <img src="images/profile.jpg" alt="profile image" class="profile">
             <h1 class="name">Muwanda Innocent</h1>
-        </div>
+            <!-- Hamburger Icon -->
 
-        <nav>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navbar">
             <ul>
                 <li><a href="https://www.linkedin.com/in/muwanda-innocent-8a45401a7">Home</a></li>
                 <li><a href="https://www.linkedin.com/in/muwanda-innocent-8a45401a7">Chamber</a></li>
                 <li><a href="https://byui.instructure.com">GitHub Profile</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/1?lang=eng&id=17,19#p17">LinkedIn</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/1?lang=eng&id=17,19#p17">LinkedIn</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="card-1">
-            <h3> Course Work</h3>
-        </section>
 
-        <section class="card-2">
-            <h3>Kampala, Uganda</h3>
-        </section>
+    <main>
+        <div class="two-cards">
+            <section class="card-1">
+                <h3>Course Work</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </section>
+
+            <section class="card-2">
+                <h3>Kampala, Uganda</h3>
+                <img src="images/budongo.jpg" alt="forest of uganda">
+            </section>
+        </div>
 
         <section class="card-3">
             <h3>Web and Computer Programming Certificate</h3>
 
-            <div>
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+            <div class="three-buttons">
+                <button data-subject="All">All</button>
+                <button data-subject="CSE">CSE</button>
+                <button data-subject="WDD">WDD</button>
             </div>
-            <div>
-                <button>CSE 110</button>
-                <button>WDD 130</button>
-                <button>CSE 111</button>
-                <button>CSE 210</button>
-                <button>WDD 131</button>
-                <button>WDD 231</button>
+
+            <div class="six-buttons">
+                <!-- Courses will be dynamically loaded here -->
             </div>
+            <section class="total-credits">
+                <p>Total Credits Required: <span id="total-credits"></span></p>
+            </section>
+            
         </section>
+
+
     </main>
+
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
