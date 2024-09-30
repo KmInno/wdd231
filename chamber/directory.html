@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Muwanda Innocent - 2024 - Home page">
+    <meta name="author" content="Muwanda Innocent">
+
+    <title>Chamber Directory Page</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber_small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="scripts/chamber.js" defer></script>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Your Chamber Site Directory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="path/to/your-image.jpg" />
+    <meta property="og:url" content="https://yourchambersite.com" />
+
+    <!-- Optional: Additional social media meta tags -->
+    <meta property="og:description"
+        content="This page provides a list of local business and other organizations that belong to the chamber of commerce." />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
+                <span class="navbar-name">KM Chamber of Commerce</span>
+            </a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <!-- Hamburger icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div class="container">
+            <h2>Our Members</h2>
+            <div class="view-buttons">
+                <button id="gridViewBtn">
+                    <i class="fas fa-th-large"></i> Grid View
+                </button>
+                <button id="listViewBtn">
+                    <i class="fas fa-list"></i> List View
+                </button>
+            </div>
+            <div id="members" class="grid"></div>
+        </div>
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>KM Commerce</h3>
+            <p>Name: KM Chamber Name</p>
+            <p>Address: 123 Chamber St, City, State, Zip</p>
+            <p>Email: info@kmchamber.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/icons/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/icons/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+            <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

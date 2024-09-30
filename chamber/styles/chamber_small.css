@@ -1,0 +1,98 @@
+.navbar-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Hide the navbar-toggle (hamburger icon) on desktop */
+.navbar-toggle {
+    display: none;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    /* Hide the menu in mobile view */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Show the menu when the "active" class is added */
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    /* Show the hamburger icon in mobile view */
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Adjust footer layout for mobile */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+        margin-bottom: var(--spacing-small);
+    }
+
+    /* Center the social icons in mobile */
+    .social-icons {
+        justify-content: center;
+        margin-top: var(--spacing-small);
+    }
+
+    /* Card Styles for Mobile */
+    .grid {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        padding: 15px;
+        font-size: var(--font-size-small);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: var(--spacing-small);
+    }
+
+    .card h4 {
+        font-size: var(--font-size-medium);
+    }
+
+    .card p {
+        font-size: var(--font-size-small);
+    }
+
+    .list-item {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .list-item img {
+        margin-right: 0; 
+        margin-bottom: var(--spacing-small); 
+        width: 100%;
+        height: auto;
+    }
+
+    .list-item h4, .list-item p {
+        font-size: var(--font-size-small); 
+    }
+}

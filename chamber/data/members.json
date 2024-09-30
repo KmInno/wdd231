@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Tech Innovations Inc.",
+            "address": "123 Tech Lane, Silicon Valley, CA 94043",
+            "phone": "(123) 456-7890",
+            "website": "https://www.techinnovations.com",
+            "icon": "./images/icons/tect2.png",
+            "membership_level": 3,
+            "description": "Leading provider of innovative tech solutions."
+        },
+        {
+            "name": "Green Earth Solutions",
+            "address": "456 Eco Blvd, Green City, CA 90210",
+            "phone": "(234) 567-8901",
+            "website": "https://www.greenearthsolutions.com",
+            "icon": "images/icons/green_eath.jpg",
+            "membership_level": 2,
+            "description": "Committed to sustainable and eco-friendly practices."
+        },
+        {
+            "name": "Health First Medical Group",
+            "address": "789 Wellness Ave, Healthtown, NY 10001",
+            "phone": "(345) 678-9012",
+            "website": "https://www.healthfirstmedical.com",
+            "icon": "images/icons/healthfirst.png",
+            "membership_level": 1,
+            "description": "Your partner in health and wellness."
+        },
+        {
+            "name": "Creative Design Studio",
+            "address": "321 Art St, Design City, FL 33101",
+            "phone": "(456) 789-0123",
+            "website": "https://www.creativedesignstudio.com",
+            "icon": "images/icons/tech.jpg",
+            "membership_level": 2,
+            "description": "Transforming ideas into stunning visuals."
+        },
+        {
+            "name": "BuildSmart Construction",
+            "address": "654 Builder Rd, Construct City, TX 75001",
+            "phone": "(567) 890-1234",
+            "website": "https://www.buildsmartconstruction.com",
+            "icon": "images/icons/build.png",
+            "membership_level": 3,
+            "description": "Constructing a smarter future."
+        },
+        {
+            "name": "Finance & Wealth Advisors",
+            "address": "987 Finance St, Moneytown, IL 60601",
+            "phone": "(678) 901-2345",
+            "website": "https://www.financewealthadvisors.com",
+            "icon": "images/icons/capstone.png",
+            "membership_level": 1,
+            "description": "Your trusted advisors in finance."
+        },
+        {
+            "name": "Travel Explorers Agency",
+            "address": "135 Adventure Rd, Travel City, NV 89501",
+            "phone": "(789) 012-3456",
+            "website": "https://www.travelexplorers.com",
+            "icon": "images/icons/explorer.png",
+            "membership_level": 2,
+            "description": "Exploring the world, one trip at a time."
+        }
+    ]
+}
