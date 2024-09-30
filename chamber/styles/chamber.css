@@ -18,6 +18,12 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
 }
+h1, h2
+{
+    font-size: var(--font-size-large);
+    color: var(--secondary-color);
+    text-align: center;
+}
 
 .navbar {
     display: flex;
