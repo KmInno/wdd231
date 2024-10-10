@@ -3,12 +3,10 @@
     color: #ffffff;
 }
 
-/* Hide the navbar-toggle (hamburger icon) on desktop */
 .navbar-toggle {
     display: none;
 }
 
-/* Styling for the entire section */
 .section-1 {
     display: flex;
     justify-content: space-between;
@@ -18,72 +16,91 @@
     background-color: #f5f5f5;
 }
 
-/* Styling for each individual block */
-.events, .weather, .forecast {
+.events, .two, .forecast {
     flex: 1;
-    padding: 15px;
+    padding: 5px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 380px;
 }
 
 .weather {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 15px;
+    justify-content: center;
 }
 
-/* Styling for the current weather div */
-/* .weather-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-} */
-
-/* Style for the weather icon */
 .weather-icon {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
-/* Styling the weather details container */
 .weather-details {
     font-size: 14px;
     color: #333;
 }
 
-h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Forecast styles */
 .forecast {
     text-align: left;
 }
 
-/* Adjust icon size */
-.weather-icon img {
-    max-width: 100%;
-    height: auto;
+.forecast-item {
+    display: flex;
+    justify-content: space-around;
 }
 
+.forecast-item img {
+    width: 100px;
+    height: 100px;
+}
 
-/* Mobile view styles */
+css
+Copy code
+#menuButton {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white; /* Ensure the button text is visible */
+    display: none; /* Hide by default */
+}
+
+#menuButton::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+#menuButton.open::before {
+    content: "X"; /* Change to "X" when open */
+    font-size: 1.5rem; 
+}
+
+#menuButton {
+    display: none;
+}
 @media (max-width: 768px) {
-    /* Hide the menu in mobile view */
     .navbar-menu {
         display: none;
         flex-direction: column;
     }
 
-    /* Show the menu when the "active" class is added */
     .navbar-menu.active {
         display: flex;
     }
 
-    /* Show the hamburger icon in mobile view */
+    .navbar-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-menu.open {
+        display: flex; /* Change this to .open to match the JS class toggle */
+    }
+
+    #menuButton {
+        display: block; /* Ensure the button is displayed on mobile */
+        cursor: pointer; /* Add a pointer cursor for better UX */
+    }
+
+
     .navbar-toggle {
         display: block;
         cursor: pointer;
@@ -97,8 +114,31 @@ h3 {
         margin: 5px 0;
         transition: 0.4s;
     }
+    .navbar-name {
+        font-size: 15px;
+    }
 
-    /* Adjust footer layout for mobile */
+    .section-1 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .events, .two, .forecast {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .weather {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer {
         flex-direction: column;
         text-align: center;
@@ -110,14 +150,54 @@ h3 {
         margin-bottom: var(--spacing-small);
     }
 
-    /* Center the social icons in mobile */
     .social-icons {
         justify-content: center;
         margin-top: var(--spacing-small);
     }
 
-    /* Card Styles for Mobile */
     .grid {
         flex-direction: column; 
         gap: 10px;
     }
+
+    main {
+        margin: var(--spacing-small);
+    }
+
+    .join-section {
+        padding: 10px;
+    }
+
+    .join-section button {
+        width: 30%;
+        padding: 10px;
+        font-size: var(--button-font-size-mobile);
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    .members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .member-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    h4, h6 {
+        font-size: 20px;
+    }
+}

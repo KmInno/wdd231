@@ -42,12 +42,8 @@
                 <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
                 <span class="navbar-name">Timbuktu Chamber of Commerce</span>
             </a>
-            <div class="navbar-toggle" id="mobile-menu">
-                <!-- Hamburger icon -->
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button id="menuButton" aria-label="Menu"></button>
+
             <ul class="navbar-menu">
                 <li><a href="https://kminno.github.io/wdd231/">Home</a></li>
                 <li><a href="https://kminno.github.io/wdd231/chamber/directory.html">Directory</a></li>
@@ -61,25 +57,38 @@
         <h1>Home</h1>
         <section class="join-section">
             <img src="images/chamber_of_commerce.jpg" alt="Chamber of Commerce image">
+
             <div class="overlay">
+                <h2>Timbuktu Chamber of Commerce</h2>
+                <br>
                 <button>Join Us</button>
             </div>
         </section>
 
+
         <section class="section-1">
 
             <div class="events">
-                <h3>Events</h3>
+                <h4>Events</h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
                 <div>
                     <!-- Events content goes here -->
                 </div>
             </div>
 
-            <div class="weather">
-                <h3>Current Weather</h3>
+            <div class="two" >
+                <h4>Current Weather</h4>
+
+                <div class="weather">
                 <img src="images/icons/weather.png" alt="Weather Icon" class="weather-icon">
 
-                <div class="weather-content">
                     <div class="weather-details">
                         <!-- Weather data will be injected here via JavaScript -->
                     </div>
@@ -87,7 +96,7 @@
             </div>
 
             <div class="forecast">
-                <h3>Weather Forecast</h3>
+                <h4>Weather Forecast</h4>
                 <div>
                     <!-- Forecast data will be injected here via JavaScript -->
                 </div>
@@ -98,31 +107,34 @@
 
         <script type="module" src="weatherModule.js"></script>
 
-        <section class="spotlights">
-            <h4>Premium customers</h3>
+        <section class="spot">
+            <h5>Premium customers</h5>
+
+            <div class="spotlights">
                 <div class="members">
-                    <div class="member"></div>
-                    <div class="member"></div>
-                    <div class="member"></div>
+                    <div class="memb">
+                        <div class="member"></div>
+                        <div class="member"></div>
+                        <div class="member"></div>
+                    </div>
                 </div>
+            </div>
 
         </section>
-
-
 
 
     </main>
 
     <footer class="footer">
         <div class="footer-column">
-            <h3>KM Commerce</h3>
+            <h8>KM Commerce</h8>
             <p>Name: Timbuktu Chamber of Commerce</p>
             <p>Address: 123 Chamber St, City, State, Zip</p>
             <p>Email: info@kmchamber.com</p>
             <p>Phone: (123) 456-7890</p>
         </div>
         <div class="footer-column">
-            <h3>Follow Us</h3>
+            <h9>Follow Us</h9>
             <ul class="social-icons">
                 <li>
                     <a href="https://youtube.com" target="_blank">

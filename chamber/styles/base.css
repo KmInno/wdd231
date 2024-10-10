@@ -1,14 +1,33 @@
 :root {
+    /* Colors */
     --primary-color: #007bff;
     --secondary-color: #ffffff33;
     --text-color: #ffffff;
-    --font-size-large: 28px;
+    --text-color_2: black;
+    --background-color-dark: #030303;
+    --background-color-white: white;
+    --button-bg-color: #18fe1c;
+    --button-hover-color: #e64a19;
+    --hover-bg-color: #555;
+    --overlay-bg-color: rgba(4, 4, 4, 0.4);
+
+    /* Font Sizes */
+    --font-size-large: 38px;
     --font-size-medium: 24px;
     --font-size-small: 16px;
+    --button-font-size: 1.5em;
+
+    /* Spacing */
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 100px;
-    --border-radius: 8px;
+
+    /* Borders & Radius */
+    --border-radius-small: 5px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 150px;
+
+    /* Transitions */
     --transition-time: 0.3s;
 }
 
@@ -17,13 +36,9 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
-    background-color: #030303;
-h2
-{
-    font-size: var(--font-size-large);
-    color: var(--secondary-color);
-    text-align: center;
+    background-color: var(--background-color-dark);
 }
+
 
 .navbar {
     display: flex;
@@ -42,7 +57,7 @@ h2
 .navbar-logo img {
     height: var(--spacing-large);
     margin-right: var(--spacing-small);
-    border-radius: 150px;
+    border-radius: var(--border-radius-large);
 }
 
 .navbar-name {
@@ -72,14 +87,11 @@ h2
 }
 
 .navbar-menu a:hover {
-    background-color: #555;
+    background-color: var(--hover-bg-color);
 }
 
 /* Heading Style */
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: var(--spacing-medium);
-}
+
 
 /* Footer Styles */
 .footer {
@@ -120,42 +132,29 @@ h1, h2, h3 {
     opacity: 0.8;
 }
 
-/* main styles */
-
+/* Main styles */
 main {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin: 20px;
-}
-
-/* Chamber of Commerce Image */
-main > section:first-of-type {
-    text-align: center;
-}
-
-main > section:first-of-type img {
-    width: 100%;
-    max-width: 1800px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto 10px;
+    gap: var(--spacing-medium);
+    margin: var(--spacing-medium);
 }
 
 /* Style for the Join Us section */
 .join-section {
     position: relative;
     width: 100%;
-    /* max-width: 600px */
     margin: 0 auto;
-    text-align: center; /* Center button text */
+    text-align: center;
+    /* Center button and heading */
 }
 
 .join-section img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; /* Optional: add rounded corners */
+    border-radius: var(--border-radius-medium);
+    /* Optional: add rounded corners */
 }
 
 /* Overlay styling */
@@ -166,26 +165,31 @@ main > section:first-of-type img {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    /* Ensure heading is above button */
     justify-content: center;
     align-items: center;
-    background-color: rgba(4, 4, 4, 0.3); /* Semi-transparent overlay */
-    border-radius: 8px; /* Match the image rounding */
+    background-color: var(--overlay-bg-color);
+    /* Semi-transparent overlay */
+    border-radius: var(--border-radius-medium);
+    /* Match the image rounding */
 }
 
-/* Button styling */
+
 .join-section button {
-    background-color: #18fe1c;
+    background-color: var(--button-bg-color);
     color: white;
     padding: 12px 24px;
     border: none;
-    border-radius: 5px;
-    font-size: 1.5em;
+    border-radius: var(--border-radius-small);
+    font-size: var(--button-font-size);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color var(--transition-time) ease;
 }
 
 .join-section button:hover {
-    background-color: #e64a19; /* Darker shade on hover */
+    background-color: var(--button-hover-color);
+    /* Darker shade on hover */
 }
 
 
@@ -193,75 +197,68 @@ main > section:first-of-type img {
 .section-1 {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    width: 100%; /* Full width of the parent */
+    gap: var(--spacing-medium);
+    /* width: 100%; */
     color: black;
 }
 
-.section-1 .events {
-    flex: 2.5; /* Events takes more space */
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 8px;
+h2 {
+    font-size: 3em;
 }
 
-.section-1 .weather, .section-1 .forecast {
-    flex: 1; /* Current Weather and Forecast take smaller space */
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 8px;
+h5 {
+    font-size: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 0;
 }
 
-/* Premium members styling */
-.spotlights {
-    padding: 10px;              /* Add some padding around the section */
-    background-color: #f9f9f9;  /* Light background color for the section */
-    border-radius: 8px;         /* Rounded corners for the section */
+h4, h6 {
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: var(--text-color);
 }
 
-.spotlights h4 {
-    text-align: center;         /* Center the heading */
-    color: rebeccapurple;       /* Heading color */
-    margin-bottom: 20px;        /* Space below the heading */
-    font-size: 1.5em;           /* Adjust heading size */
+
+.spot {
+    background-color: var(--background-color-white);
+    color: var(--text-color_2);
+    border-radius: var(--border-radius-small);
 }
 
 .members {
-    display: flex;              /* Use flexbox for the layout */
-    justify-content: space-evenly; /* Space between member cards */
-    align-items: flex-start;    /* Align items at the top */
-    /* flex-wrap: wrap;             */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
 }
 
 .member {
-    /* width: 200px;               */
-    height: 300px;              /* Fixed height for member cards */
-    margin: 10px;               /* Space between member cards */
-    padding: 10px;              /* Inner padding */
-    background-color: #ffffff;  /* White background for the member cards */
-    border: 1px solid #ddd;     /* Light border for the cards */
-    border-radius: 8px;         /* Rounded corners for the member cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center;         /* Center text inside the cards */
-    color: #030303;             /* Text color */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+    padding: 10px;
+    margin: 10px;
+    background-color: #f3f3f3;
+    border-radius: var(--border-radius-small);
+    text-align: center;
 }
 
-.member:hover {
-    transform: scale(1.05);     /* Slightly enlarge the card on hover */
+.member-body {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color-white);
+    padding: 10px;
 }
 
-.member img {
-    max-width: 100px;           /* Set a max width for icons */
-    height: auto;               /* Maintain aspect ratio */
-    margin-bottom: 10px;        /* Space between image and text */
+.member-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-top: 20px;
 }
 
-.member h4 {
-    margin: 10px 0;             /* Space above and below the name */
-    font-size: 1.5em;           /* Increase font size for names */
-}
-
-.member p {
-    margin: 5px 0;              /* Space between paragraphs */
+.member-text {
+    padding: 20px;
 }
