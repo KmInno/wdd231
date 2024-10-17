@@ -34,169 +34,171 @@
         content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." />
 </head>
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">
-            <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
-            <span class="navbar-name">Timbuktu Chamber of Commerce</span>
-        </a>
-        <button id="menuButton" aria-label="Menu"></button>
+<body>
 
-        <ul class="navbar-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
+                <span class="navbar-name">Timbuktu Chamber of Commerce</span>
+            </a>
+            <button id="menuButton" aria-label="Menu"></button>
 
-<main>
-    <div>
-        <h1>Join Us</h1>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <form method="GET" action="thanks.html" class="designOne">
+    <main>
+        <div>
+            <h1>Join Us</h1>
 
-            <!-- First Name Field -->
-            <label>First Name*
-                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
-            </label>
+            <form method="GET" action="thanks.html" class="designOne">
 
-            <!-- Last Name Field -->
-            <label>Last Name*
-                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-            </label>
+                <!-- First Name Field -->
+                <label>First Name*
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
 
-            <!-- Organization Title Field (Only alpha characters, hyphens, and spaces, minimum 7 characters) -->
-            <label>Organizational Title
-                <input type="text" name="org_title" title="Your Title within the Organization"
-                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="7-character min">
-            </label>
+                <!-- Last Name Field -->
+                <label>Last Name*
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
 
-            <!-- Email Field -->
-            <label>Email*
-                <input type="email" name="email" required autocomplete="email" title="Your Email"
-                    placeholder="example@mail.com">
-            </label>
+                <!-- Organization Title Field (Only alpha characters, hyphens, and spaces, minimum 7 characters) -->
+                <label>Organizational Title
+                    <input type="text" name="org_title" title="Your Title within the Organization"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="7-character min">
+                </label>
 
-            <!-- Mobile Phone Field -->
-            <label>Mobile Phone*
-                <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes"
-                    placeholder="987-555-1234">
-            </label>
+                <!-- Email Field -->
+                <label>Email*
+                    <input type="email" name="email" required autocomplete="email" title="Your Email"
+                        placeholder="example@mail.com">
+                </label>
 
-            <!-- Organization Name Field -->
-            <label>Organization Name
-                <input type="text" name="organization" required autocomplete="organization"
-                    title="Your Business/Organization Name">
-            </label>
+                <!-- Mobile Phone Field -->
+                <label>Mobile Phone*
+                    <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="987-555-1234">
+                </label>
 
-            <!-- Membership Level Selection -->
-            <h3>Select Membership Level</h3>
-            <label><input type="radio" name="membership" value="NP" required> NP Membership (Non-Profit)</label>
-            <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-            <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-            <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                <!-- Organization Name Field -->
+                <label>Organization Name
+                    <input type="text" name="organization" required autocomplete="organization"
+                        title="Your Business/Organization Name">
+                </label>
 
-            <!-- Organization Description Field -->
-            <label>Business/Organization Description
-                <textarea name="org_description" title="Describe Your Business or Organization"></textarea>
-            </label>
+                <!-- Membership Level Selection -->
+                <h3>Select Membership Level</h3>
+                <label><input type="radio" name="membership" value="NP" required> NP Membership (Non-Profit)</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
 
-            <!-- Timestamp Field (Hidden) -->
-            <input type="hidden" name="timestamp" id="timestamp">
+                <!-- Organization Description Field -->
+                <label>Business/Organization Description
+                    <textarea name="org_description" title="Describe Your Business or Organization"></textarea>
+                </label>
 
-            <!-- Submit Button -->
-            <input type="submit" value="Submit Your Application">
+                <!-- Timestamp Field (Hidden) -->
+                <input type="hidden" name="timestamp" id="timestamp">
 
-        </form>
-    </div>
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Your Application">
 
-    <div class="membership">
-
-        <h2>Membership Levels</h2>
-
-        <!-- Membership Cards -->
-        <div class="membership-cards">
-            <!-- NP Membership Card -->
-            <div class="card card-np">
-                <h4>NP Membership</h4>
-                <p>No fee for non-profit organizations.</p>
-                <button id="openButton1">More Info</button>
-            </div>
-
-            <!-- Bronze Membership Card -->
-            <div class="card card-bronze">
-                <h4>Bronze Membership</h4>
-                <p>Affordable entry-level benefits.</p>
-                <button id="openButton2">More Info</button>
-            </div>
-
-            <!-- Silver Membership Card -->
-            <div class="card card-silver">
-                <h4>Silver Membership</h4>
-                <p>More benefits and event discounts.</p>
-                <button id="openButton3">More Info</button>
-            </div>
-
-            <!-- Gold Membership Card -->
-            <div class="card card-gold">
-                <h4>Gold Membership</h4>
-                <p>Premium benefits with maximum exposure.</p>
-                <button id="openButton4">More Info</button>
-            </div>
+            </form>
         </div>
 
-        <!-- Dialog for displaying benefits -->
-        <dialog id="dialogBox">
-            <!-- <button id="closeButton">Close</button> -->
+        <div class="membership">
 
-            <div id="modalContent">
-                <!-- Content will be loaded here dynamically -->
+            <h2>Membership Levels</h2>
+
+            <!-- Membership Cards -->
+            <div class="membership-cards">
+                <!-- NP Membership Card -->
+                <div class="card card-np">
+                    <h4>NP Membership</h4>
+                    <p>No fee for non-profit organizations.</p>
+                    <button id="openButton1">More Info</button>
+                </div>
+
+                <!-- Bronze Membership Card -->
+                <div class="card card-bronze">
+                    <h4>Bronze Membership</h4>
+                    <p>Affordable entry-level benefits.</p>
+                    <button id="openButton2">More Info</button>
+                </div>
+
+                <!-- Silver Membership Card -->
+                <div class="card card-silver">
+                    <h4>Silver Membership</h4>
+                    <p>More benefits and event discounts.</p>
+                    <button id="openButton3">More Info</button>
+                </div>
+
+                <!-- Gold Membership Card -->
+                <div class="card card-gold">
+                    <h4>Gold Membership</h4>
+                    <p>Premium benefits with maximum exposure.</p>
+                    <button id="openButton4">More Info</button>
+                </div>
             </div>
-        </dialog>
+
+            <!-- Dialog for displaying benefits -->
+            <dialog id="dialogBox">
+                <!-- <button id="closeButton">Close</button> -->
+
+                <div id="modalContent">
+                    <!-- Content will be loaded here dynamically -->
+                </div>
+            </dialog>
 
 
 
-    </div>
+        </div>
 
 
 
-</main>
+    </main>
 
-<footer class="footer">
-    <div class="footer-column">
-        <h5>Timbuktu Chamber of Commerce</h5>
-        <p>Name: Timbuktu Chamber of Commerce</p>
-        <p>Address: 123 Chamber St, City, State, Zip</p>
-        <p>Email: info@kmchamber.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </div>
-    <div class="footer-column">
-        <h5>Follow Us</h5>
-        <ul class="social-icons">
-            <li>
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/icons/youtube.png" alt="YouTube">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/icons/twitter.png" alt="Twitter">
-                </a>
-            </li>
-            <li>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/icons/linkedin.png" alt="LinkedIn">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
-        <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-column">
+            <h5>Timbuktu Chamber of Commerce</h5>
+            <p>Name: Timbuktu Chamber of Commerce</p>
+            <p>Address: 123 Chamber St, City, State, Zip</p>
+            <p>Email: info@kmchamber.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-column">
+            <h5>Follow Us</h5>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/icons/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/icons/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+            <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+        </div>
+    </footer>
 
 </body>
 
