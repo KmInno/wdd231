@@ -1,0 +1,171 @@
+.navbar-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+#menuButton {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: white; /* Ensure the button text is visible */
+  display: none; /* Hide by default */
+}
+
+#menuButton::before {
+  content: "☰"; /* Hamburger icon */
+}
+
+#menuButton.open::before {
+  content: "X"; /* Change to "X" when open */
+  font-size: 1.5rem;
+}
+
+#menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar-menu.open {
+    display: flex; /* Change this to .open to match the JS class toggle */
+  }
+
+  #menuButton {
+    display: block; /* Ensure the button is displayed on mobile */
+    cursor: pointer; /* Add a pointer cursor for better UX */
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .navbar-name {
+    font-size: 15px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    margin: 1rem 2%;
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      color: purple;
+      padding-top: 0.2rem;
+    }
+    h3 {
+      font-size: 0.9rem;
+      color: #e07a5f;
+      margin: 1.5rem 0 0.2rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="email"],
+    select {
+      display: block;
+      margin: 0.1rem 0 1rem 0;
+      padding: 0.3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color: #555;
+      font-size: 1rem;
+      color: #3d405b;
+      width: 250px;
+    }
+
+    input:required {
+      border-left-color: #d70000;
+    }
+    input:focus {
+      border-left-color: black;
+      outline: none;
+    }
+    input:required:valid {
+      border-left-color: green;
+    }
+
+    input[type="submit"] {
+      border: none;
+      text-align: center;
+      background-color: #3d405b;
+      color: white;
+      border-radius: 1rem;
+      padding: 0.75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #3d405b;
+  }
+
+  .membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .membership-cards {
+    justify-content: space-between;
+  }
+
+  .membership-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+    width: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-column {
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+::backdrop {
+    background-color: rgb(157, 67, 67, 0.5);
+}
+
+
+}

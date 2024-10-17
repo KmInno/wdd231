@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Muwanda Innocent - 2024 - Home page">
+    <meta name="author" content="Muwanda Innocent">
+
+    <title>Timbuktu Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/thanks.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="scripts/thanks.js" defer></script>
+
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber Site Directory" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kminno.github.io/wdd231/chamber/images/eyes.jpeg" />
+    <meta property="og:url" content="https://kminno.github.io/wdd231/chamber/directory.html" />
+
+    <!-- Optional: Additional social media meta tags -->
+    <meta property="og:description"
+        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." />
+</head>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
+            <span class="navbar-name">Timbuktu Chamber of Commerce</span>
+        </a>
+        <button id="menuButton" aria-label="Menu"></button>
+
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Thank you for joining our membership</h1>
+        <div class="data">
+            <p>First Name: <span id="firstName"></span></p>
+            <p>Last Name: <span id="lastName"></span></p>
+            <p>Organization Title: <span id="orgTitle"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone: <span id="phone"></span></p>
+            <p>Organization: <span id="organization"></span></p>
+            <p>Membership Level: <span id="membership"></span></p>
+            <p>Organization Description: <span id="orgDescription"></span></p>
+        </div>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="footer-column">
+        <h5>Timbuktu Chamber of Commerce</h5>
+        <p>Name: Timbuktu Chamber of Commerce</p>
+        <p>Address: 123 Chamber St, City, State, Zip</p>
+        <p>Email: info@kmchamber.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="footer-column">
+        <h5>Follow Us</h5>
+        <ul class="social-icons">
+            <li>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/icons/youtube.png" alt="YouTube">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/icons/twitter.png" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/icons/linkedin.png" alt="LinkedIn">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+        <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>

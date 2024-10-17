@@ -1,0 +1,446 @@
+:root {
+    /* Colors */
+    --primary-color: #007bff;
+    --secondary-color: #ffffff33;
+    --text-color: #ffffff;
+    --text-color_2: black;
+    --background-color-dark: #030303;
+    --background-color-white: white;
+    --button-bg-color: #18fe1c;
+    --button-hover-color: #e64a19;
+    --hover-bg-color: #555;
+    --overlay-bg-color: rgba(4, 4, 4, 0.4);
+
+    /* Font Sizes */
+    --font-size-large: 38px;
+    --font-size-medium: 24px;
+    --font-size-small: 16px;
+    --button-font-size: 1.5em;
+
+    /* Spacing */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 100px;
+
+    /* Borders & Radius */
+    --border-radius-small: 5px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 150px;
+
+    /* Transitions */
+    --transition-time: 0.3s;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: var(--spacing-large);
+    margin-right: var(--spacing-small);
+    border-radius: var(--border-radius-large);
+}
+
+.navbar-name {
+    color: var(--text-color);
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: var(--spacing-medium);
+}
+
+.navbar-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: var(--spacing-small);
+    font-weight: bold;
+    font-size: var(--font-size-medium);
+    transition: background-color var(--transition-time);
+}
+
+.navbar-menu a:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* main styles */
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+/* form styles */
+/* General form styles */
+form.designOne {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Style for form labels */
+form.designOne label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styles */
+form.designOne input[type="text"],
+form.designOne input[type="email"],
+form.designOne input[type="tel"],
+form.designOne input[type="date"],
+form.designOne textarea,
+form.designOne select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+form.designOne textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Radio button styles */
+form.designOne input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Membership level styles */
+form.designOne h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+/* Submit button styles */
+form.designOne input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form.designOne input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Field focus state styles */
+form.designOne input:focus,
+form.designOne textarea:focus,
+form.designOne select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Optional: Align radio buttons in a row */
+form.designOne label[for="radio"] {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Styling the title of the form */
+form.designOne h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+/* General card styling */
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+    /* gap: 15px; */
+    margin-top: 20px;
+    width: 600px;
+    padding: 15px;
+}
+
+/* NP Membership - No fee */
+.card-np {
+    background-color: #4CAF50; /* Green for NP Membership */
+    color: white;
+    border: 1px solid #388E3C;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-np h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-np button {
+    background-color: #2E7D32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-np button:hover {
+    background-color: #1B5E20;
+}
+
+/* Bronze Membership */
+.card-bronze {
+    background-color: #CD7F32; /* Bronze color */
+    color: white;
+    border: 1px solid #A97142;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-bronze h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-bronze button {
+    background-color: #A97142;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-bronze button:hover {
+    background-color: #8C6239;
+}
+
+/* Silver Membership */
+.card-silver {
+    background-color: #C0C0C0; /* Silver color */
+    color: black;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-silver h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-silver button {
+    background-color: #A0A0A0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-silver button:hover {
+    background-color: #808080;
+}
+
+/* Gold Membership */
+.card-gold {
+    background-color: #FFD700; /* Gold color */
+    color: black;
+    border: 1px solid #FFC700;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-gold h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-gold button {
+    background-color: #EEC900;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-gold button:hover {
+    background-color: #B8860B;
+}
+
+/* Modal styling */
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+#dialogBox div {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+#closeButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Resposive layout */
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: var(--spacing-medium);
+    margin-top: var(--spacing-medium);
+    text-align: center;
+}
+
+
+footer h5 {
+    font-size: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 var(--spacing-medium);
+    align-items: center;
+}
+
+.footer-column h3 {
+    margin-bottom: var(--spacing-small);
+}
+
+.social-icons {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: var(--spacing-small);
+}
+
+.social-icons img {
+    width: var(--spacing-large);
+    height: var(--spacing-large);
+    transition: opacity var(--transition-time);
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+::backdrop {
+    background-color: rgb(157, 67, 67, 0.5);
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: auto 60px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease forwards; /* Fade and slide up on load */
+}
+
+.card-np {
+    animation-delay: 0.1s;
+}
+
+.card-bronze {
+    animation-delay: 0.2s;
+}
+
+.card-silver {
+    animation-delay: 0.3s;
+}
+
+.card-gold {
+    animation-delay: 0.4s;
+}
