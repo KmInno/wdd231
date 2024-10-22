@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Muwanda Innocent - 2024 - Join us page">
+    <meta name="author" content="Muwanda Innocent">
+
+    <title>Discover Page</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/thanks.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="scripts/discover.js" defer></script>
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber Site Directory" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kminno.github.io/wdd231/chamber/images/eyes.jpeg" />
+    <meta property="og:url" content="https://kminno.github.io/wdd231/chamber/directory.html" />
+
+    <!-- Optional: Additional social media meta tags -->
+    <meta property="og:description"
+        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/eyes.jpeg" alt="Chamber Logo"> <!-- Replace with your logo image path -->
+                <span class="navbar-name">Timbuktu Chamber of Commerce</span>
+            </a>
+            <button id="menuButton" aria-label="Menu"></button>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover">
+        <div id="visitor-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="visitor-message"></p>
+            </div>
+        </div>
+        <div class="sidebar_container">
+            <div class="sidebar">
+                <h2>Sidebar Information</h2>
+
+                <section>
+                    <h3>Demographics</h3>
+                    <p>Population: 50,000</p>
+                    <p>Median Age: 35</p>
+                </section>
+
+                <section>
+                    <h3>Statistical Data</h3>
+                    <ul>
+                        <li>Average Income: $55,000</li>
+                        <li>Unemployment Rate: 4%</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>Concert - Oct 25</li>
+                        <li>Food Festival - Nov 1</li>
+                        <li>Marathon - Nov 10</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Attractions</h3>
+                    <ul>
+                        <li>National Park</li>
+                        <li>Museum of History</li>
+                        <li>City Zoo</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Calendar</h3>
+                    <div class="calendar">
+                        <!-- Placeholder for a simple calendar -->
+                        <p>October 2024</p>
+                        <p>Su Mo Tu We Th Fr Sa</p>
+                        <p>-- -- -- 1 2 3 4 5</p>
+                        <p>5 6 7 8 9 10 11 12</p>
+                        <p>12 13 14 15 16 17</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="images_container">
+            <div class="imageside">
+                <img data-src="images/kampala_city.webp" alt="kampala_city" class="lazy-image">
+                <p>kampala city</p>
+
+                <img data-src="images/farming.webp" alt="farming-pic" class="lazy-image">
+                <p>farming in Uganda</p>
+
+                <img data-src="images/roads.webp" alt="roads" class="lazy-image">
+                <p>Roads in Uganda</p>
+
+                <img data-src="images/tour.webp" alt="nature pic" class="lazy-image">
+                <p>Tourism in Uganda</p>
+
+                <img data-src="images/taxi.webp" alt="taxi-pic" class="lazy-image">
+                <p>Uganda Local transportation mode</p>
+
+
+                <img data-src="images/uganda-culture-dance.webp" alt="uganda-culture-dance" class="lazy-image">
+                <p>Culture in Uganda</p>
+            </div>
+        </div>
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h5>Timbuktu Chamber of Commerce</h5>
+            <p>Name: Timbuktu Chamber of Commerce</p>
+            <p>Address: 123 Chamber St, City, State, Zip</p>
+            <p>Email: info@kmchamber.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-column">
+            <h5>Follow Us</h5>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/icons/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/icons/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+            <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
