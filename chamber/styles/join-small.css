@@ -171,7 +171,8 @@
     background-color: rgb(157, 67, 67, 0.5);
 }
 
-main.discover {
+
+main div.discover {
   display: grid;
   grid-template-columns: auto;
 }
