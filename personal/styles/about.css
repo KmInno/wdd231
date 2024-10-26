@@ -1,0 +1,270 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(23, 99, 21);
+}
+
+/* nav bar styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 100px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.navbar-name {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-menu a:hover {
+    background-color: green;
+    color: white;
+}
+
+.inquire {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 15px;
+    border: #000000;
+    transition: background-color 0.3s ease;
+
+}
+
+.inquire:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* height: 500px; */
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+
+.text {
+    width: 400px;
+    text-align: center;
+    margin-left: 30px;
+    padding: 20px; 
+}
+
+section {
+    /* width: 95%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.team-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 18%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.team-member .bio {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+
+footer {
+    border-top: 20px solid;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+footer h5 {
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-icons img {
+    width: 40px;
+    padding: 10px;
+}
+
+.social-icons img:hover {
+    opacity: 0.5;
+}
+
+/* Newsletter Section Styling */
+.newsletter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Form Styling */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fc1d1d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+section.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+

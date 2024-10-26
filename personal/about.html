@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Muwanda Innocent - 2024 - Lubstar About Us page">
+    <meta name="author" content="Muwanda Innocent">
+
+    <title>Lubstar Safari About us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="scripts/safari.js" defer></script>
+    <script type="module" src="scripts/loadTours.js"></script>
+
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Lubstar Safari Home page" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kminno.github.io/wdd231/personal/images/lubstar_log.png" />
+    <meta property="og:url" content="https://kminno.github.io/wdd231/personal/index.html" />
+
+    <!-- Optional: Additional social media meta tags -->
+    <meta property="og:description"
+        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/lubstar_logo.png" alt="Lubstar Logo">
+                <span class="navbar-name">Lubstar Safari</span>
+            </a>
+            <button id="menuButton" aria-label="Menu"></button>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="safar_&_tours.html">Safari & tours</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="inquire">INQUIRE</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="content">
+                <div>
+                    <img src="images/gorilla3.webp" alt="about us image" class="image">
+                </div>
+                <div class="text">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia officia fuga quos
+                        deserunt laborum, repellendus fugit in iusto quis.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-why">
+            <div class="content">
+                <div class="text">
+                    <h1>Why Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia officia fuga quos
+                        deserunt
+                        laborum, repellendus fugit in iusto quis.</p>
+                </div>
+                <div>
+                    <img src="images/Mgahinga__gorilla_park__golden-monkey.jpg" alt="why us image" class="image">
+                </div>
+
+            </div>
+
+            </div>
+
+
+        </section>
+        <section class="section-mission">
+            <div class="content">
+                <div>
+                    <img src="images/young-traveler-exploring-world-concept-mixed-media_641298-1931.jpg"
+                        alt="Mission image" class="image">
+                </div>
+                <div class="text">
+                    <h1>Our Mission</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia officia fuga quos
+                        deserunt laborum, repellendus fugit in iusto quis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest news and offers.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        
+        
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/gorilla1.webp" alt="Team Member 1">
+                    <h3>Alex Johnson</h3>
+                    <p>Lead Guide</p>
+                    <p class="bio">With years of experience, Alex ensures every safari is memorable.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/gorilla3.webp" alt="Team Member 2">
+                    <h3>Sarah Williams</h3>
+                    <p>Wildlife Expert</p>
+                    <p class="bio">Sarah brings her passion for wildlife conservation to each tour.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/gorillas2.webp" alt="Team Member 3">
+                    <h3>Tom Brown</h3>
+                    <p>Adventure Specialist</p>
+                    <p class="bio">Tom loves creating thrilling experiences for adventure seekers.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/Mgahinga__gorilla_park__golden-monkey.jpg" alt="Team Member 4">
+                    <h3>Lily Chen</h3>
+                    <p>Customer Relations</p>
+                    <p class="bio">Lily is dedicated to ensuring client satisfaction at every step.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h5>Lubstar Safari</h5>
+            <p>Name: Lubstar safari</p>
+            <p>Address: 123 Chamber St, City, State, Zip</p>
+            <p>Email: info@kmchamber.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-column">
+            <h5>Follow Us</h5>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/icons/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/icons/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+            <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+        </div>
+    </footer>
+</body>

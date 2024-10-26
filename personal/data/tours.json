@@ -1,0 +1,47 @@
+{
+    "tours": [
+      {
+        "image": "./images/gorilla3.webp",
+        "title": "Gorilla Trekking",
+        "description": "Experience the thrill of tracking and observing gorillas in their natural habitat.",
+        "category": "top"
+      },
+      {
+        "image": "./images/lake-mburo.webp",
+        "title": "Wildlife Safari",
+        "description": "Discover diverse wildlife with guided safaris through national parks.",
+        "category": "top"
+      },
+      {
+        "image": "./images/rafting.webp",
+        "title": "Adventure Activities",
+        "description": "Engage in exciting activities like white-water rafting, bungee jumping, and more.",
+        "category": "top"
+      },
+      {
+        "image": "./images/traditional_maasai-woman_kenya.jpg",
+        "title": "Cultural Tour",
+        "description": "Immerse yourself in local cultures and traditions with guided cultural experiences.",
+        "category": "featured"
+      },
+      {
+        "image": "./images/kampala_city.webp",
+        "title": "City Exploration",
+        "description": "Discover the highlights of vibrant city life with guided tours and local insights.",
+        "category": "featured"
+      },
+      {
+        "image": "./images/beach_escape.jpeg",
+        "title": "Beach Escape",
+        "description": "Relax and unwind on stunning beaches with beautiful views and recreational activities.",
+        "category": "featured"
+      },
+      {
+        "image": "./images/10-Days-Rwenzori-Mountains-Climbing-Trekking-Uganda-Tour-750x450.webp",
+        "title": "Mountain Hiking",
+        "description": "Explore scenic mountains with guided hikes tailored for every skill level.",
+        "category": "featured"
+      }
+    ]
+  }
+  

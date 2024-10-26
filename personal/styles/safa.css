@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(9, 134, 19);
+
+}
+
+/* nav bar styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.navbar-name {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-menu a:hover {
+    background-color: green;
+    color: white;
+}
+main h1, main p {
+    text-align: center;
+    color: white;
+}
+/* Main layout */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d9d9d9;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar ul li a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #09e409;
+}
+
+/* Content area */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Tours container styling */
+.tours-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.tours {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Tour card styling */
+.tour-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: scale(1.03);
+}
+
+/* Column layout for tour cards */
+.tours.column .tour-card {
+    display: flex;
+    /* align-items: center; */
+    width: 60%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.tours.column .tour-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Row layout for tour cards */
+.tours.row .tour-card {
+    width: 300px;
+    padding: 15px;
+}
+
+.tour-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tours.column .tour-info-container {
+    margin: 40px;
+}
+
+/* Tour card text content */
+.tour-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.tour-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 15px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20000;
+}
+
+#list-view,
+#grid-view {
+    background-color: rgb(230, 51, 236);
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+#list-view:hover,
+#grid-view:hover {
+    background-color: rgb(170, 40, 175);
+}
+
+/* Footer styling */
+footer {
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h5 {
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-icons img {
+    width: 30px;
+    padding: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}

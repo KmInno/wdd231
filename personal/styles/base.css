@@ -1,0 +1,352 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* nav bar styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.navbar-name {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-menu a:hover {
+    background-color: green;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('ug-01.jpg');
+    background-size: cover;
+
+
+}
+
+.hero {
+    height: 85vh;
+    width: 100%;
+    background-image: url('Mgahinga__gorilla_park__golden-monkey.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-data {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);    
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-size: 40px;
+}
+
+.top-tours, .featured-tours  {
+    
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* .featured-tours {
+    background-color: #007bff;
+} */
+
+.top-tours, .featured-tours{
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+hr {
+    width: 60%;
+    background-color: white;
+    /* paddin20px;px; */
+}
+
+.top-tours-cards, .featured-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tour-card, .feature-card {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    color: #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    align-content: center;
+}
+
+.tour-card img, .feature-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.top-tours-cards, .featured-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.tour-card:hover, .feature-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.tour-card h3, .feature-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.tour-card button, .feature-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inquire, .more {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 15px;
+    border: #000000;
+    transition: background-color 0.3s ease;
+
+}
+.more:hover {
+    background-color: #000000;
+    color: rgb(243, 195, 39);
+}
+
+.inquire:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.tour-card button:hover, .feature-card button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    width: 100%;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.testimonials p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Cards Layout */
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.testimonial-quote {
+    font-size: 0.95em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+
+/* footer styles */
+
+footer {
+    border-top: 20px solid;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+footer h5 {
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-icons img {
+    width: 40px;
+    padding: 10px;
+}
+
+.social-icons img:hover {
+    opacity: 0.5;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to all sections */
+section {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Different delays for each section for a staggered effect */
+.top-tours {
+    animation-delay: 0.3s;
+}
+
+.featured-tours {
+    animation-delay: 0.6s;
+}
+
+.testimonials {
+    animation-delay: 0.9s;
+}
+
+/* Individual card animations for staggered card load-in */
+.top-tours .top-tours-cards > div,
+.featured-tours .featured-cards > div,
+.testimonials .testimonial-cards > div {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+/* Staggered delay for each card */
+.top-tours .top-tours-cards > div:nth-child(1) { animation-delay: 0.5s; }
+.top-tours .top-tours-cards > div:nth-child(2) { animation-delay: 0.7s; }
+.top-tours .top-tours-cards > div:nth-child(3) { animation-delay: 0.9s; }
+
+.featured-tours .featured-cards > div:nth-child(1) { animation-delay: 0.5s; }
+.featured-tours .featured-cards > div:nth-child(2) { animation-delay: 0.7s; }
+.featured-tours .featured-cards > div:nth-child(3) { animation-delay: 0.9s; }
+
+.testimonials .testimonial-cards > div:nth-child(1) { animation-delay: 0.5s; }
+.testimonials .testimonial-cards > div:nth-child(2) { animation-delay: 0.7s; }
+.testimonials .testimonial-cards > div:nth-child(3) { animation-delay: 0.9s; }
