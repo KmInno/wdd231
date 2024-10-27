@@ -8,7 +8,7 @@ window.onload = function () {
     displayDateModified();
 }
 
-//add event listener to menu button and nav links
+// Add event listener to menu button and nav links
 const hamButton = document.querySelector('#menuButton');
 const navigation = document.querySelector('.navbar-menu');
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             const tourCard = document.createElement("div");
             tourCard.className = "tour-card";
             tourCard.innerHTML = `
-                <img src="${tour.image}" alt="${tour.title}" />
+                <img src="${tour.image}" alt="${tour.title}" loading="lazy" />
                 <h3>${tour.title}</h3>
                 <p>${tour.description}</p>
                 <button>More</button>
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             const featureCard = document.createElement("div");
             featureCard.className = "feature-card";
             featureCard.innerHTML = `
-                <img src="${tour.image}" alt="${tour.title}" />
+                <img src="${tour.image}" alt="${tour.title}" loading="lazy" />
                 <h3>${tour.title}</h3>
                 <p>${tour.description}</p>
                 <button>More</button>
