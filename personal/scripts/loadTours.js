@@ -1,14 +1,10 @@
-// loadTours.js
-
 async function loadTours() {
     try {
         const response = await fetch('./data/tours.json');
         const data = await response.json();
         
-        // Access the array within the "tours" key
         const tours = data.tours;
 
-        // Check if the tours data is an array
         if (!Array.isArray(tours)) {
             throw new Error("Tours data is not an array");
         }
@@ -19,7 +15,10 @@ async function loadTours() {
             const tourCard = document.createElement('div');
             tourCard.classList.add('tour-card');
             
-            // Create the div for the image
+            // Set the category as a data attribute for filtering
+            tourCard.setAttribute('data-category', tour.category);
+
+            // Create the image container and image
             const imageContainer = document.createElement('div');
             imageContainer.classList.add('tour-image-container');
             
@@ -28,7 +27,7 @@ async function loadTours() {
             tourImage.alt = tour.title;
             imageContainer.appendChild(tourImage);
 
-            // Create the div for title and description
+            // Create the title and description container
             const infoContainer = document.createElement('div');
             infoContainer.classList.add('tour-info-container');
             

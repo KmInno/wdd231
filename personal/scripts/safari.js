@@ -32,3 +32,40 @@ document.addEventListener('DOMContentLoaded', () => {
         toursContainer.classList.add('row');
     });
 });
+
+function filterTours(category) {
+    const tours = document.querySelectorAll('.tour-card');
+    
+    tours.forEach(tour => {
+        const tourCategory = tour.getAttribute('data-category');
+        
+        // Show all tours if "all" is selected, or if the tour has the selected category
+        if (category === 'all' || tourCategory === category) {
+            tour.style.display = 'block';
+        } else {
+            tour.style.display = 'none';
+        }
+    });
+}
+
+document.querySelector('.contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Show the modal
+    const modal = document.getElementById('thankYouModal');
+    modal.style.display = 'block';
+    
+    // Close the modal when clicking the 'X' button
+    document.querySelector('.close').onclick = function () {
+        modal.style.display = 'none';
+    };
+    
+    // Close the modal when clicking outside the modal content
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+});
+
+
